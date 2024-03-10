@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f1f5f9;
+    font-family: 'Open sans', sans-serif;
+}
+main{
+     min-height: 100vh;
+     display: grid;
+     place-items: center;
+}
+.slideShow{
+    height: 100%;
+}
+.title{
+    margin-top: 15vh;
+    margin-bottom: 2rem;
+}
+.title h1{
+     text-align: center;
+     text-transform:  uppercase;
+     letter-spacing: 3px;
+     font-weight: 900;
+     text-shadow: 2px 2px 2px black;
+}
+.container{
+   width: 90vw;
+   margin: 0 auto;
+   height: 50vh;
+   max-width: 80rem;
+   background-color: red;
+   box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
+   border-radius: 0.5rem;
+   position: relative;
+   overflow: hidden;   
+}
+.slide{
+     position: absolute;
+     width: 100%;
+     height: 100%;
+}
+img{
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+}
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+.slideNum{
+     position: absolute;
+     padding: 1rem;
+     color: red;
+     z-index: 1;
+}
+button{
+    border: none;
+    margin: 0 0.5rem;
+    padding: 0.25rem 0.5rem;
+    text-transform: uppercase;
+    border: 2px solid red;
+    letter-spacing: 2px;
+    border-radius: 0.5rem;
+    color: #fff;
+    background: aqua;
+}
